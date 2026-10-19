@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SP404SX" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/sp_accent_orange</item>
+        <item name="colorPrimaryVariant">@color/sp_body_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/sp_accent_orange</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor">@color/sp_body_dark</item>
+        <item name="android:navigationBarColor">@color/sp_body_dark</item>
+        <item name="android:windowBackground">@color/sp_body</item>
+    </style>
+</resources>

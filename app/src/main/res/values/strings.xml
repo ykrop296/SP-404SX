@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SP-404SX</string>
+    <string name="bank_a">A</string>
+    <string name="bank_b">B</string>
+    <string name="bank_c">C</string>
+    <string name="btn_rec">REC</string>
+    <string name="btn_play">PLAY</string>
+    <string name="btn_stop">STOP</string>
+    <string name="btn_del">DEL</string>
+    <string name="btn_fx">FX</string>
+    <string name="btn_hold">HOLD</string>
+    <string name="btn_roll">ROLL</string>
+    <string name="btn_copy">COPY</string>
+    <string name="btn_start_end">START/END</string>
+    <string name="btn_pad_link">PAD LINK</string>
+    <string name="btn_pattern">PATTERN</string>
+    <string name="btn_import">IMPORT</string>
+    <string name="knob_volume">VOLUME</string>
+    <string name="knob_fx1">CTRL 1</string>
+    <string name="knob_fx2">CTRL 2</string>
+    <string name="knob_fx3">CTRL 3</string>
+    <string name="display_welcome">SP-404SX</string>
+    <string name="display_ready">READY</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SP-404SX color scheme -->
+    <color name="sp_body">#2D2D2D</color>
+    <color name="sp_body_dark">#1A1A1A</color>
+    <color name="sp_body_light">#3D3D3D</color>
+    <color name="sp_panel">#383838</color>
+    <color name="sp_pad_off">#4A4A4A</color>
+    <color name="sp_pad_pressed">#FF6B35</color>
+    <color name="sp_pad_playing">#FFB347</color>
+    <color name="sp_pad_loaded">#5A5A5A</color>
+    <color name="sp_button_off">#3C3C3C</color>
+    <color name="sp_button_on">#FF4444</color>
+    <color name="sp_button_text">#CCCCCC</color>
+    <color name="sp_button_active_text">#FFFFFF</color>
+    <color name="sp_display_bg">#1B3A1B</color>
+    <color name="sp_display_text">#33FF33</color>
+    <color name="sp_display_dim">#1B6B1B</color>
+    <color name="sp_knob_body">#2A2A2A</color>
+    <color name="sp_knob_indicator">#FFFFFF</color>
+    <color name="sp_label_text">#999999</color>
+    <color name="sp_accent_orange">#FF6B35</color>
+    <color name="sp_accent_red">#FF3333</color>
+    <color name="sp_accent_green">#33FF33</color>
+    <color name="sp_bank_a">#FF6B35</color>
+    <color name="sp_bank_b">#3399FF</color>
+    <color name="sp_bank_c">#FF3399</color>
+    <color name="sp_rec_red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

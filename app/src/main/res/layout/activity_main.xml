@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sp_body"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/body_padding"
+    android:paddingTop="8dp"
+    android:paddingEnd="@dimen/body_padding"
+    android:paddingBottom="8dp">
+
+    <!-- 1. Header Section: Roland SP-404SX Branding -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roland"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/app_name"
+            android:textColor="@color/sp_accent_orange"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.08"
+            android:text="LINEAR WAVE SAMPLER"
+            android:textColor="@color/sp_label_text"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- 2. Display and Volume Knob Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/display_height"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.instruments.sp404sx.ui.DisplayView
+            android:id="@+id/displayView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.68" />
+
+        <com.instruments.sp404sx.ui.KnobView
+            android:id="@+id/knobVolume"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_weight="0.32" />
+    </LinearLayout>
+
+    <!-- 3. Control Knobs Section: CTRL 1, CTRL 2, CTRL 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.instruments.sp404sx.ui.KnobView
+            android:id="@+id/knobCtrl1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.KnobView
+            android:id="@+id/knobCtrl2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.KnobView
+            android:id="@+id/knobCtrl3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 4. Bank Selection and Import Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:orientation="horizontal">
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnBankA"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnBankB"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnBankC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnImport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" />
+    </LinearLayout>
+
+    <!-- 5. Control Buttons Section: Row 1 (REC, PATTERN, FX, HOLD, ROLL) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="@dimen/button_margin"
+        android:orientation="horizontal">
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnRec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnPattern"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnFx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnHold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnRoll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- 6. Control Buttons Section: Row 2 (PLAY, STOP, COPY, DEL, START/END, PAD LINK) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginBottom="6dp"
+        android:orientation="horizontal">
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnPlay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnStop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnCopy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnDel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnStartEnd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/button_margin"
+            android:layout_weight="1.2" />
+
+        <com.instruments.sp404sx.ui.ControlButtonView
+            android:id="@+id/btnPadLink"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2" />
+    </LinearLayout>
+
+    <!-- 7. 4x3 Performance Pad Grid (Pads 1-12) filling all remaining space -->
+    <GridLayout
+        android:id="@+id/padGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignMargins"
+        android:columnCount="4"
+        android:columnOrderPreserved="false"
+        android:rowCount="3"
+        android:useDefaultMargins="false">
+
+        <!-- Row 1: Pads 1, 2, 3, 4 -->
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <!-- Row 2: Pads 5, 6, 7, 8 -->
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad7"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <!-- Row 3: Pads 9, 10, 11, 12 -->
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad10"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+
+        <com.instruments.sp404sx.ui.PadView
+            android:id="@+id/pad12"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="@dimen/pad_margin" />
+    </GridLayout>
+
+</LinearLayout>

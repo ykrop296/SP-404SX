@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:translateX="10.8"
+        android:translateY="10.8">
+        <!-- SP Logo - Letter 'S' -->
+        <path
+            android:fillColor="@color/sp_accent_orange"
+            android:pathData="M34,36 L48,36 C51,36 53,38 53,41 L53,44 C53,47 51,49 48,49 L39,49 C36,49 34,51 34,54 L34,57 C34,60 36,62 39,62 L53,62 L53,57 L39,57 L39,54 L48,54 C51,54 53,52 53,49 L53,41 C53,38 51,36 48,36 Z" />
+        <!-- SP Logo - Letter 'P' -->
+        <path
+            android:fillColor="@color/sp_accent_orange"
+            android:pathData="M57,36 L71,36 C74,36 76,38 76,41 L76,47 C76,50 74,52 71,52 L62,52 L62,62 L57,62 Z M62,41 L62,47 L71,47 L71,41 Z" />
+        <!-- Sampler Pad Matrix representation -->
+        <path
+            android:fillColor="@color/sp_pad_playing"
+            android:pathData="M34,67 h8 v8 h-8 z M46,67 h8 v8 h-8 z M58,67 h8 v8 h-8 z M70,67 h8 v8 h-8 z" />
+    </group>
+</vector>
